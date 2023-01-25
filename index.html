@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
+	<meta charset="UTF-8">
+	<title>TERMOMETRO</title>
+</head>
+<body>
+	<header>
+        <center>
+            <div>
+                <img src="imgs/logo2.png" width="300" height="200">
+                <h1>VERIFICACION Y AJUSTE DE TERMOMETROS</h1>
+            </div>
+        </center>
+    </header>
+
+    <br><br>
+    
+    <main>
+        <center>
+            <div class="container fluid">
+                <form action="script.php" method="post" class="container">
+                    <div class="row-p2">
+                        <div class="col col-6">
+                            <label for="name">Selecciona la fecha</label>
+                            <input class="form-control" type="date" name="fecha" required>
+                        </div>
+                    </div>
+
+                    <br><br>
+
+                    <div class="row-p2">
+                        <div class="col col-6">
+                            <label for="name">Selecciona el tipo de termometro</label>
+                            <select type="text" class="form-control" name="tipodetermometro" required>
+								<option>Digital de punzón</option>
+								<option>Analogo de punzón</option>
+							</select>  <br>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </center>
+    </main>
+    <footer>
+    	<hr>
+    	<h3>Observaciones</h3>
+    	<ul>
+    		<li>El dato obtenido se debe registrar en un sticker, el cual se pegará en un lugar visible del termómetro</li>
+    		<li>si la diferencia de temperatura del termometro digital de punzón con el estandar(0°C)está en un rango superior a 2°C se debe solicitar reposición del equipo</li>
+    	</ul>
+    </footer>
+</body>
+</html>
